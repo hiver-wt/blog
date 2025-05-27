@@ -40,6 +40,7 @@ highlight:
   wrap: true
   hljs: false
 prismjs:
+  enable: true
   preprocess: true
   line_number: true
   tab_replace: ''
@@ -88,6 +89,8 @@ categoryBar:
       cover: /blog/image/index24.jpg
     - descr: CG
       cover: /blog/image/index25.jpg
+    - descr: CUDA
+      cover: /blog/image/index26.jpg
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 # 小冰的分类磁贴
@@ -101,12 +104,12 @@ magnet:
     - name: RTR4
       display_name: RTR4
       icon: 📚
-    # - name: CG
-    #   display_name: CG
-    #   icon: 🎮
-    # - name: C++
-    #   display_name: 小冰の编程学习
-    #   icon: 👩‍💻
+    - name: CG
+      display_name: CG
+      icon: 🎮
+    - name: CUDA-Examples
+      display_name: CUDA-Examples
+      icon: 👩‍💻
     # - name: 学习
     #   display_name: 小冰の读书笔记
     #   icon: 📒
