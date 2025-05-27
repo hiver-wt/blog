@@ -38,18 +38,13 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      #- name: Deploy to GitHub Pages
-        #env:
-        #  GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        #run: |
-        #  cd public/
-        #  git init
-        #  git add -A
-        #  git commit -m "Create by workflows"
-        #  git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/hiver-wt/blog.git
-        #  git push origin HEAD:gh-pages -f
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          hexo deploy
+          cd public/
+          git init
+          git add -A
+          git commit -m "Create by workflows"
+          git remote add origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/hiver-wt/blog.git
+          git push origin HEAD:gh-pages -f
