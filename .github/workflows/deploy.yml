@@ -42,7 +42,6 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          run: |
-          export REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/hiver-wt/blog.git"
+          export REPO_URL="https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/hiver-wt/blog.git"
           sed "s~__REPO__~$REPO_URL~g" _config.yml > _config.deploy.yml
           hexo deploy -c _config.deploy.yml
