@@ -42,9 +42,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          cd public/
-          git init
-          git add -A
-          git commit -m "Create by workflows"
-          git remote add origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/hiver-wt/blog.git
-          git push origin HEAD:gh-pages -f
+          run: |
+          export REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/hiver-wt/blog.git"
+          sed "s~__REPO__~$REPO_URL~g" _config.yml > _config.deploy.yml
+          hexo deploy -c _config.deploy.yml

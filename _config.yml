@@ -63,7 +63,7 @@ ignore: null
 theme: butterfly
 deploy:
   type: git
-  repo: https://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@github.com/hiver-wt/blog.git #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 token
+  repo: https://github.com/hiver-wt/blog.git
   branch: gh-pages
 
 # 本地搜索
