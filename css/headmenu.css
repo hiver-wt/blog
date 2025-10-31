@@ -1,0 +1,10 @@
+#nav {
+    font-size: 1.5em;
+    /* 稍微增大整体字体 */
+}
+
+#blog-info .site-name {
+    font-size: 1.5em;
+    /* 增大网站名称字体 */
+    font-weight: bold;
+}
