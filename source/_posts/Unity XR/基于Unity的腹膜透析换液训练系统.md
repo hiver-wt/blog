@@ -1,8 +1,8 @@
 ---
 title: 基于Unity的腹膜透析换液训练系统
 date: 2024-07-27 13:19:10
-tags: Unity
-categories: Unity
+tags: XR
+categories: XR
 description: 实习的时候做的项目，记录一下开发过程
 mathjax: true
 ---
@@ -22,8 +22,8 @@ mathjax: true
 Kawase Blur最初用于Bloom后处理特效，但其可以推广作为专门的模糊算法使用，且在模糊外观表现上与高斯模糊非常接近。
 
 主要思路是对距离当前像素越来越远的地方对四个角进行采样，且在两个大小相等的纹理之间进行乒乓式的blit。创新点在于，采用了随迭代次数移动的blur kernel，而不是类似高斯模糊，或box blur一样从头到尾固定的blur kernel。
-<img src="/blog/image/1.1.jpeg" alt="1.1" style="zoom:75%;" />
-<img src="/blog/image/1.2.jpeg" alt="1.1" style="zoom:75%;" />
+<img src="/blog/img/1.1.jpeg" alt="1.1" style="zoom:75%;" />
+<img src="/blog/img/1.2.jpeg" alt="1.1" style="zoom:75%;" />
 
 实践数据表明，在相似的模糊表现下，Kawase Blur比经过优化的高斯模糊的性能约快1.5倍到3倍。
 
@@ -42,7 +42,7 @@ half4 frag(v2f i):SV_TARGET
     }
 ```
 效果如下:
-<img src="/blog/image/1.3.png   " alt="1.1" style="zoom:75%;" />
+<img src="/blog/img/1.3.png   " alt="1.1" style="zoom:75%;" />
 
 
 ## Unity相关
@@ -80,7 +80,7 @@ IEnumerator DelayedSwitchCamera(float delayTime)
 项目中一个很简单的方法，用来延迟相机的切换
 
 补充：untiy生命周期图
-<img src="/blog/image/2.1.png   " alt="1.1" style="zoom:75%;" />
+<img src="/blog/img/2.1.png   " alt="1.1" style="zoom:75%;" />
 > 位于Update与LateUpdate之间这些yield 的含义：
 - `yield return null`; 暂停协程等待下一帧继续执行
 - `yield return 0`或其他数字; 暂停协程等待下一帧继续执行

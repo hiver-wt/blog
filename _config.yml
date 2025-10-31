@@ -1,9 +1,12 @@
-title: hiver-Blog
+title: jikjik-Blog
 subtitle: ''
-description: 'hiver Blog'
+description: 'Just want to record some things'
 keywords: null
-author: hiver
-language: zh-CN
+author: jikjik
+language:
+  - zh-CN
+  - en
+  - ja
 timezone: ''
 url: https://hiver-wt.github.io/blog
 root: /blog/
@@ -85,12 +88,14 @@ categoryBar:
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
-    - descr: RTR4
-      cover: /blog/image/index24.jpg
+    - descr: Deep Learing
+      cover: /blog/image/index11.jpg
     - descr: CG
-      cover: /blog/image/index25.jpg
-    - descr: CUDA
-      cover: /blog/image/index26.jpg
+      cover: /blog/image/index22.jpg
+    - descr: CV
+      cover: /blog/image/index111.png
+    - descr: Unity XR
+      cover: /blog/image/index200.png
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
 # 小冰的分类磁贴
@@ -101,18 +106,18 @@ magnet:
   type: categories
   devide: 2
   display:
-    - name: RTR4
-      display_name: RTR4
+    - name: Deep Learing
+      display_name: Deep Learing
       icon: 📚
     - name: CG
-      display_name: CG
+      display_name: Computer Graphics
       icon: 🎮
-    - name: CUDA-Examples
-      display_name: CUDA-Examples
+    - name: CV
+      display_name: Computer Vision
       icon: 👩‍💻
-    # - name: 学习
-    #   display_name: 小冰の读书笔记
-    #   icon: 📒
+    - name: XR
+      display_name: Unity XR
+      icon: 📒
     # - name: 随想
     #   display_name: 小冰の胡思乱想
     #   icon: 💡
@@ -200,6 +205,29 @@ math:
 
   katex:
     enable: false
+
+
+# 加密
+#  encrypt:
+#  enable: true
+#  password: ""  # 设置默认密码
+#  message: 请输入访问密码：  # 密码提示信息
+
+# 加密
+encrypt:
+  # 启用插件
+  enable: true
+  # 自定义加密相关设置
+  abstract: "这里的内容加密了，需要密码哦。"
+  message: "请输入密码查看本文。"
+  # 可以在这里设定特定标签对应的默认密码
+  # tags:
+     # - [name: "encryptAsSecret", password: "yoursecret"]
+  # 错误消息设置
+  wrong_pass_message: "密码错误，请重试。"
+  wrong_hash_message: "内容认证失败，但仍可尝试查看。"
+  # 是否禁用日志记录
+  silent: false
 
 # 公式渲染
 # mathjax:
