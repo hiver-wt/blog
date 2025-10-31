@@ -19,6 +19,7 @@
     "hexo-butterfly-swiper": "^1.0.12",
     "hexo-butterfly-tag-plugins-plus": "^1.0.18",
     "hexo-butterfly-wowjs": "^1.0.5",
+    "hexo-deployer-git": "^4.0.0",
     "hexo-filter-mathjax": "^0.9.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
