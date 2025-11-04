@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>Calculus</title>
+      <link href="/blog/2025/11/03/Maths/Calculus/post/"/>
+      <url>/blog/2025/11/03/Maths/Calculus/post/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Maths </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maths </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Algebra</title>
+      <link href="/blog/2025/11/03/Maths/Algebra/chapter1/"/>
+      <url>/blog/2025/11/03/Maths/Algebra/chapter1/</url>
+      
+        <content type="html"><![CDATA[<p>参考：<div class="tag link"><a class="link-card" title="MIT线性代数中文笔记" href="https://github.com/MLNLP-World/MIT-Linear-Algebra-Notes"><div class="left"><img src="/img/link.png"></div><div class="right"><p class="text">MIT线性代数中文笔记</p><p class="url">https://github.com/MLNLP-World/MIT-Linear-Algebra-Notes</p></div></a></div></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Maths </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maths </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Data Processing</title>
+      <link href="/blog/2025/11/03/Deep%20Learing/Li%20Mu/Data%20Operation/"/>
+      <url>/blog/2025/11/03/Deep%20Learing/Li%20Mu/Data%20Operation/</url>
+      
+        <content type="html"><![CDATA[<h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">x = torch.arange(<span class="number">12</span>)</span><br><span class="line"><span class="comment"># tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])</span></span><br><span class="line"></span><br><span class="line">X = x.reshape(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="comment"># tensor([[ 0,  1,  2,  3],</span></span><br><span class="line"><span class="comment">#        [ 4,  5,  6,  7],</span></span><br><span class="line"><span class="comment">#        [ 8,  9, 10, 11]])</span></span><br><span class="line"></span><br><span class="line">torch.randn(<span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"><span class="comment"># tensor([[-0.0135,  0.0665,  0.0912,  0.3212],</span></span><br><span class="line"><span class="comment">#        [ 1.4653,  0.1843, -1.6995, -0.3036],</span></span><br><span class="line"><span class="comment">#        [ 1.7646,  1.0450,  0.2457, -0.7732]])</span></span><br><span class="line"></span><br><span class="line">X = torch.arange(<span class="number">12</span>, dtype=torch.float32).reshape((<span class="number">3</span>,<span class="number">4</span>))</span><br><span class="line">Y = torch.tensor([[<span class="number">2.0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">3</span>], [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], [<span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]])</span><br><span class="line">torch.cat((X, Y), dim=<span class="number">0</span>), torch.cat((X, Y), dim=<span class="number">1</span>)</span><br><span class="line"><span class="comment"># dim = 0 : 竖着连接 </span></span><br><span class="line"><span class="comment"># dim = 1 : 横着连接</span></span><br><span class="line"><span class="comment"># (tensor([[ 0.,  1.,  2.,  3.],</span></span><br><span class="line"><span class="comment">#         [ 4.,  5.,  6.,  7.],</span></span><br><span class="line"><span class="comment">#         [ 8.,  9., 10., 11.],</span></span><br><span class="line"><span class="comment">#         [ 2.,  1.,  4.,  3.],</span></span><br><span class="line"><span class="comment">#         [ 1.,  2.,  3.,  4.],</span></span><br><span class="line"><span class="comment">#         [ 4.,  3.,  2.,  1.]]),</span></span><br><span class="line"><span class="comment"># tensor([[ 0.,  1.,  2.,  3.,  2.,  1.,  4.,  3.],</span></span><br><span class="line"><span class="comment">#         [ 4.,  5.,  6.,  7.,  1.,  2.,  3.,  4.],</span></span><br><span class="line"><span class="comment">#         [ 8.,  9., 10., 11.,  4.,  3.,  2.,  1.]]))</span></span><br><span class="line"></span><br><span class="line">X[-<span class="number">1</span>], X[<span class="number">1</span>:<span class="number">3</span>]</span><br><span class="line"><span class="comment"># 与任何Python数组一样：第一个元素的索引是0，最后一个元素索引是-1； 可以指定范围以包含第一个元素和最后一个之前的元素。</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># (tensor([ 8.,  9., 10., 11.]),</span></span><br><span class="line"><span class="comment"># tensor([[ 4.,  5.,  6.,  7.],</span></span><br><span class="line"><span class="comment">#         [ 8.,  9., 10., 11.]]))</span></span><br></pre></td></tr></table></figure><h1 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个csv文件</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line">os.makedirs(os.path.join(<span class="string">'..'</span>, <span class="string">'data'</span>), exist_ok=<span class="literal">True</span>)</span><br><span class="line">data_file = os.path.join(<span class="string">'..'</span>, <span class="string">'data'</span>, <span class="string">'house_tiny.csv'</span>)</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(data_file, <span class="string">'w'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">'NumRooms,Alley,Price\n'</span>)  <span class="comment"># 列名</span></span><br><span class="line">    f.write(<span class="string">'NA,Pave,127500\n'</span>)  <span class="comment"># 每行表示一个数据样本</span></span><br><span class="line">    f.write(<span class="string">'2,NA,106000\n'</span>)</span><br><span class="line">    f.write(<span class="string">'4,NA,178100\n'</span>)</span><br><span class="line">    f.write(<span class="string">'NA,NA,140000\n'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = pd.read_csv(data_file)</span><br><span class="line"><span class="built_in">print</span>(data)</span><br><span class="line"></span><br><span class="line"><span class="comment">#    NumRooms Alley   Price</span></span><br><span class="line"><span class="comment"># 0       NaN  Pave  127500</span></span><br><span class="line"><span class="comment"># 1       2.0   NaN  106000</span></span><br><span class="line"><span class="comment"># 2       4.0   NaN  178100</span></span><br><span class="line"><span class="comment"># 3       NaN   NaN  140000</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 处理缺失的数据</span></span><br><span class="line">inputs, outputs = data.iloc[:, <span class="number">0</span>:<span class="number">2</span>], data.iloc[:, <span class="number">2</span>] <span class="comment"># index location</span></span><br><span class="line">inputs = inputs.fillna(inputs.mean())</span><br><span class="line"><span class="built_in">print</span>(inputs)</span><br><span class="line"></span><br><span class="line"><span class="comment">#   NumRooms Alley</span></span><br><span class="line"><span class="comment"># 0       3.0  Pave</span></span><br><span class="line"><span class="comment"># 1       2.0   NaN</span></span><br><span class="line"><span class="comment"># 2       4.0   NaN</span></span><br><span class="line"><span class="comment"># 3       3.0   NaN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 对于string 可以把NaN单独看成一个特征</span></span><br><span class="line">inputs = pd.get_dummies(inputs, dummy_na=<span class="literal">True</span>)</span><br><span class="line"><span class="built_in">print</span>(inputs)</span><br><span class="line"><span class="comment">#    NumRooms  Alley_Pave  Alley_nan</span></span><br><span class="line"><span class="comment"># 0       3.0           1          0</span></span><br><span class="line"><span class="comment"># 1       2.0           0          1</span></span><br><span class="line"><span class="comment"># 2       4.0           0          1</span></span><br><span class="line"><span class="comment"># 3       3.0           0          1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 最后转换成tensor</span></span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"></span><br><span class="line">X = torch.tensor(inputs.to_numpy(dtype=<span class="built_in">float</span>))</span><br><span class="line">y = torch.tensor(outputs.to_numpy(dtype=<span class="built_in">float</span>))</span><br><span class="line">X, y</span><br><span class="line"><span class="comment"># (tensor([[3., 1., 0.],</span></span><br><span class="line"><span class="comment">#          [2., 0., 1.],</span></span><br><span class="line"><span class="comment">#          [4., 0., 1.],</span></span><br><span class="line"><span class="comment">#          [3., 0., 1.]], dtype=torch.float64),</span></span><br><span class="line"><span class="comment">#  tensor([127500., 106000., 178100., 140000.], dtype=torch. float64))</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除NaN最多的列</span></span><br><span class="line">nan_counts = data.isnull().<span class="built_in">sum</span>()</span><br><span class="line">max_nan_column = nan_counts.idxmax()</span><br><span class="line">data_cleaned = data.drop(columns=[max_nan_column])</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Deep Learing </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> AI; Deep Learing </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RP</title>
       <link href="/blog/2025/10/31/CV/RP/"/>
       <url>/blog/2025/10/31/CV/RP/</url>
