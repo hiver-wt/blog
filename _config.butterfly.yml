@@ -449,7 +449,7 @@ aside:
       link: https://github.com/hiver-wt
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: Record sth
   card_recent_post:
     enable: false
     limit: 5 # if set 0 will show all

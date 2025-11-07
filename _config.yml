@@ -88,13 +88,13 @@ categoryBar:
   column: odd # odd：3列 | even：4列
   row: 1 #显示行数，默认两行，超过行数切换为滚动显示
   message:
-    - descr: Deep Learing
-      cover: /blog/image/index11.jpg
-    - descr: CG
-      cover: /blog/image/index22.jpg
-    - descr: CV
-      cover: /blog/image/index111.png
     - descr: Unity XR
+      cover: /blog/image/index11.jpg
+    - descr: Deep Learing
+      cover: /blog/image/index22.jpg
+    - descr: Maths
+      cover: /blog/image/index111.png
+    - descr: CG
       cover: /blog/image/index200.png
   custom_css: https://npm.elemecdn.com/hexo-butterfly-categories-card@1.0.0/lib/categorybar.css
 
@@ -118,9 +118,9 @@ magnet:
     - name: XR
       display_name: Unity XR
       icon: 📒
-    # - name: 随想
-    #   display_name: 小冰の胡思乱想
-    #   icon: 💡
+    - name: Maths
+      display_name: Mathematics
+      icon: 💡
   color_setting:
     text_color: black
     text_hover_color: white
